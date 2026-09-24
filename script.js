@@ -1,84 +1,108 @@
-// =============================
-// MOBILE MENU
-// =============================
+/* =========================
+   MOBILE MENU
+========================= */
 
-function toggleMenu() {
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.getElementById("nav");
 
-    const menu = document.getElementById("navMenu");
+menuBtn.addEventListener("click", () => {
 
-    menu.classList.toggle("active");
+    nav.classList.toggle("active");
 
-}
+    if (nav.classList.contains("active")) {
+        menuBtn.textContent = "✕";
+    } else {
+        menuBtn.textContent = "☰";
+    }
+
+});
 
 
-// =============================
-// DARK MODE
-// =============================
+/* =========================
+   CLOSE MENU AFTER CLICK
+========================= */
 
-function toggleDarkMode() {
+const navLinks = document.querySelectorAll(".nav a");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        nav.classList.remove("active");
+
+        menuBtn.textContent = "☰";
+
+    });
+
+});
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+const themeBtn = document.getElementById("themeBtn");
+
+themeBtn.addEventListener("click", () => {
 
     document.body.classList.toggle("dark");
 
-    const button = document.querySelector(".dark-btn");
-
     if (document.body.classList.contains("dark")) {
 
-        button.innerHTML = "☀️";
+        themeBtn.textContent = "☀️";
 
-        localStorage.setItem("darkMode", "enabled");
+        localStorage.setItem("theme", "dark");
 
     } else {
 
-        button.innerHTML = "🌙";
+        themeBtn.textContent = "🌙";
 
-        localStorage.setItem("darkMode", "disabled");
-
-    }
-
-}
-
-
-// =============================
-// SAVE DARK MODE
-// =============================
-
-window.addEventListener("load", function () {
-
-    const darkMode = localStorage.getItem("darkMode");
-
-    if (darkMode === "enabled") {
-
-        document.body.classList.add("dark");
-
-        document.querySelector(".dark-btn").innerHTML = "☀️";
+        localStorage.setItem("theme", "light");
 
     }
 
 });
 
 
-// =============================
-// SEARCH SERVICES
-// =============================
+/* =========================
+   SAVE DARK MODE
+========================= */
 
-function searchServices() {
+const savedTheme = localStorage.getItem("theme");
 
-    const input =
-        document.getElementById("searchBox")
-        .value
-        .toLowerCase();
+if (savedTheme === "dark") {
 
-    const cards =
-        document.querySelectorAll(".service-card");
+    document.body.classList.add("dark");
 
-    cards.forEach(function(card) {
+    themeBtn.textContent = "☀️";
 
-        const text =
-            card.innerText.toLowerCase();
+}
 
-        if (text.includes(input)) {
 
-            card.style.display = "";
+/* =========================
+   SEARCH SERVICES
+========================= */
+
+const searchInput = document.getElementById("serviceSearch");
+const serviceCards = document.querySelectorAll(".service-card");
+const noResult = document.getElementById("noResult");
+
+searchInput.addEventListener("input", () => {
+
+    const searchText = searchInput.value
+        .toLowerCase()
+        .trim();
+
+    let found = 0;
+
+    serviceCards.forEach(card => {
+
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(searchText)) {
+
+            card.style.display = "block";
+            found++;
 
         } else {
 
@@ -88,30 +112,45 @@ function searchServices() {
 
     });
 
-}
+
+    if (found === 0) {
+
+        noResult.style.display = "block";
+
+    } else {
+
+        noResult.style.display = "none";
+
+    }
+
+});
 
 
-// =============================
-// CURRENT YEAR
-// =============================
+/* =========================
+   CURRENT YEAR
+========================= */
 
-document.getElementById("year").innerText =
+document.getElementById("year").textContent =
     new Date().getFullYear();
 
 
-// =============================
-// CLOSE MOBILE MENU
-// =============================
+/* =========================
+   HEADER SHADOW
+========================= */
 
-document.querySelectorAll("#navMenu a")
-.forEach(function(link) {
+window.addEventListener("scroll", () => {
 
-    link.addEventListener("click", function() {
+    const header = document.getElementById("header");
 
-        document
-        .getElementById("navMenu")
-        .classList.remove("active");
+    if (window.scrollY > 20) {
 
-    });
+        header.style.boxShadow =
+            "0 5px 25px rgba(0,0,0,0.08)";
+
+    } else {
+
+        header.style.boxShadow = "none";
+
+    }
 
 });
