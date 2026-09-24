@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="চিত্রকর ডিজিটাল সাইন - PVC ID Card ডিজাইন ও প্রিন্টিং সার্ভিস। স্কুল, মাদ্রাসা, কলেজ, অফিস ও সংগঠনের জন্য প্রিমিয়াম ID Card।">
+    <title>চিত্রকর ডিজিটাল সাইন | Premium Digital Printing</title>
 
-    <title>চিত্রকর ডিজিটাল সাইন | PVC ID Card Printing</title>
+    <meta name="description"
+        content="চিত্রকর ডিজিটাল সাইন — Premium PVC ID Card Design, Digital Printing, Lanyard, QR Code ও Barcode Service. আলমডাঙ্গা, চুয়াডাঙ্গা।">
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,59 +24,123 @@
 
 <!-- ================= HEADER ================= -->
 
-<header class="header">
+<header class="header" id="header">
 
-    <div class="logo">
-        <span>চিত্রকর</span>
-        <small>ডিজিটাল সাইন</small>
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            <span>চিত্রকর</span>
+            <small>ডিজিটাল সাইন</small>
+        </a>
+
+        <nav class="nav" id="nav">
+
+            <a href="#home">হোম</a>
+            <a href="#services">সেবাসমূহ</a>
+            <a href="#about">আমাদের সম্পর্কে</a>
+            <a href="#process">কাজের পদ্ধতি</a>
+            <a href="#contact">যোগাযোগ</a>
+
+        </nav>
+
+        <div class="nav-buttons">
+
+            <button class="theme-btn" id="themeBtn" aria-label="Dark Mode">
+                🌙
+            </button>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                ☰
+            </button>
+
+        </div>
+
     </div>
-
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
-
-    <nav id="navMenu">
-        <a href="#home">হোম</a>
-        <a href="#services">সেবা</a>
-        <a href="#features">সুবিধা</a>
-        <a href="#about">আমাদের সম্পর্কে</a>
-        <a href="#contact">যোগাযোগ</a>
-    </nav>
-
-    <button class="dark-btn" onclick="toggleDarkMode()">🌙</button>
 
 </header>
 
 
 <!-- ================= HERO ================= -->
 
+<main>
+
 <section class="hero" id="home">
 
-    <div class="hero-content">
+    <div class="hero-bg"></div>
 
-        <div class="badge">
-            ✨ Premium Digital Printing Service
+    <div class="container hero-content">
+
+        <div class="hero-text">
+
+            <div class="badge">
+                ✨ Premium Digital Printing Service
+            </div>
+
+            <h1>
+                আপনার প্রতিষ্ঠানের জন্য
+                <span>প্রিমিয়াম ID Card</span>
+            </h1>
+
+            <p>
+                স্কুল, মাদ্রাসা, কলেজ, কোচিং সেন্টার, অফিস ও বিভিন্ন
+                সংগঠনের জন্য আকর্ষণীয় PVC ID Card ডিজাইন ও প্রিন্টিং।
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="mailto:excellentmedia.00@gmail.com"
+                    class="btn btn-primary">
+                    📩 অর্ডার করুন
+                </a>
+
+                <a href="https://wa.me/8801984721775"
+                    class="btn btn-whatsapp"
+                    target="_blank">
+                    💬 WhatsApp
+                </a>
+
+            </div>
+
+            <div class="hero-features">
+
+                <div>✓ Premium Quality</div>
+                <div>✓ Fast Delivery</div>
+                <div>✓ Affordable Price</div>
+
+            </div>
+
         </div>
 
-        <h1>
-            আপনার প্রতিষ্ঠানের জন্য
-            <span>প্রিমিয়াম ID Card</span>
-        </h1>
+        <div class="hero-card">
 
-        <p>
-            স্কুল, মাদ্রাসা, কলেজ, কোচিং সেন্টার,
-            অফিস ও বিভিন্ন সংগঠনের জন্য আকর্ষণীয়
-            PVC ID Card ডিজাইন ও প্রিন্টিং।
-        </p>
+            <div class="id-preview">
 
-        <div class="hero-buttons">
-            <a href="#contact" class="btn primary">
-                📩 অর্ডার করুন
-            </a>
+                <div class="id-top">
+                    <span>PREMIUM</span>
+                    <strong>ID CARD</strong>
+                </div>
 
-            <a href="https://wa.me/8801984721775"
-               class="btn whatsapp"
-               target="_blank">
-                💬 WhatsApp
-            </a>
+                <div class="id-photo">
+                    👤
+                </div>
+
+                <h3>YOUR NAME</h3>
+
+                <p>Student / Employee</p>
+
+                <div class="id-line"></div>
+
+                <div class="id-info">
+                    <span>ID: 2026001</span>
+                    <span>VALID: 2026</span>
+                </div>
+
+                <div class="qr">
+                    ▦
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -79,117 +152,189 @@
 
 <section class="search-section">
 
-    <h2>🔍 সেবা খুঁজুন</h2>
+    <div class="container">
 
-    <input
-        type="text"
-        id="searchBox"
-        placeholder="যেমন: PVC, QR Code, Lanyard..."
-        onkeyup="searchServices()"
-    >
+        <div class="search-box">
+
+            <span>🔍</span>
+
+            <input
+                type="text"
+                id="serviceSearch"
+                placeholder="আপনার প্রয়োজনীয় সেবা খুঁজুন..."
+                autocomplete="off">
+
+        </div>
+
+    </div>
 
 </section>
 
 
 <!-- ================= SERVICES ================= -->
 
-<section class="section" id="services">
+<section class="services section" id="services">
 
-    <div class="section-title">
+    <div class="container">
 
-        <span>আমাদের সেবা</span>
+        <div class="section-heading">
 
-        <h2>আমরা দিচ্ছি</h2>
+            <span>OUR SERVICES</span>
 
-        <p>
-            আপনার প্রয়োজন অনুযায়ী মানসম্মত
-            ID Card Printing Service।
+            <h2>আমাদের সেবাসমূহ</h2>
+
+            <p>
+                আপনার প্রতিষ্ঠানের প্রয়োজন অনুযায়ী
+                মানসম্মত ডিজাইন ও প্রিন্টিং সেবা।
+            </p>
+
+        </div>
+
+
+        <div class="services-grid" id="servicesGrid">
+
+            <div class="service-card">
+
+                <div class="service-icon">🪪</div>
+
+                <h3>PVC ID Card</h3>
+
+                <p>
+                    প্রিমিয়াম কোয়ালিটির PVC ID Card
+                    ডিজাইন ও প্রিন্টিং।
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🎨</div>
+
+                <h3>ID Card Design</h3>
+
+                <p>
+                    আপনার প্রতিষ্ঠানের জন্য
+                    আকর্ষণীয় ও আধুনিক ডিজাইন।
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🎗️</div>
+
+                <h3>Lanyard / ফিতা</h3>
+
+                <p>
+                    ID Card-এর সাথে মানসম্মত
+                    Lanyard বা ফিতা।
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🔳</div>
+
+                <h3>QR Code</h3>
+
+                <p>
+                    ID Card-এ QR Code যুক্ত করার
+                    সুবিধা।
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">▦</div>
+
+                <h3>Barcode</h3>
+
+                <p>
+                    প্রয়োজন অনুযায়ী Barcode
+                    যুক্ত করার সুবিধা।
+                </p>
+
+            </div>
+
+
+            <div class="service-card">
+
+                <div class="service-icon">🖨️</div>
+
+                <h3>Digital Printing</h3>
+
+                <p>
+                    বিভিন্ন ধরনের Digital Printing
+                    সার্ভিস।
+                </p>
+
+            </div>
+
+        </div>
+
+        <p class="no-result" id="noResult">
+            কোনো সেবা পাওয়া যায়নি।
         </p>
 
     </div>
 
+</section>
 
-    <div class="cards" id="serviceList">
 
-        <div class="card service-card">
+<!-- ================= ABOUT ================= -->
 
-            <div class="icon">💳</div>
+<section class="about section" id="about">
 
-            <h3>PVC ID Card</h3>
+    <div class="container about-grid">
+
+        <div class="about-content">
+
+            <span class="section-label">ABOUT US</span>
+
+            <h2>
+                চিত্রকর ডিজিটাল সাইন
+            </h2>
 
             <p>
-                উন্নতমানের PVC কার্ডে
-                প্রিমিয়াম ID Card তৈরি।
+                আমরা স্কুল, মাদ্রাসা, কলেজ, কোচিং সেন্টার,
+                অফিস ও বিভিন্ন সংগঠনের জন্য প্রিমিয়াম
+                মানের ID Card ডিজাইন ও প্রিন্টিং সেবা প্রদান করি।
             </p>
+
+            <p>
+                আপনার প্রয়োজন অনুযায়ী নাম, ছবি, QR Code,
+                Barcode এবং অন্যান্য তথ্য যুক্ত করে
+                আকর্ষণীয় ID Card তৈরি করা হয়।
+            </p>
+
+            <div class="about-list">
+
+                <div>✓ উন্নত মানের প্রিন্টিং</div>
+                <div>✓ আকর্ষণীয় ডিজাইন</div>
+                <div>✓ দ্রুত ডেলিভারি</div>
+                <div>✓ সাশ্রয়ী মূল্য</div>
+
+            </div>
 
         </div>
 
 
-        <div class="card service-card">
+        <div class="about-box">
 
-            <div class="icon">🎨</div>
+            <div class="about-icon">
+                🖨️
+            </div>
 
-            <h3>ডিজাইন ও প্রিন্ট</h3>
-
-            <p>
-                আকর্ষণীয় ডিজাইনসহ
-                উন্নতমানের ডিজিটাল প্রিন্টিং।
-            </p>
-
-        </div>
-
-
-        <div class="card service-card">
-
-            <div class="icon">🎗️</div>
-
-            <h3>ল্যানইয়ার্ড / ফিতা</h3>
+            <h3>Digital Printing</h3>
 
             <p>
-                ID Card-এর সাথে
-                ল্যানইয়ার্ড বা ফিতার সুবিধা।
-            </p>
-
-        </div>
-
-
-        <div class="card service-card">
-
-            <div class="icon">📱</div>
-
-            <h3>QR Code</h3>
-
-            <p>
-                ID Card-এ QR Code
-                যুক্ত করার সুবিধা।
-            </p>
-
-        </div>
-
-
-        <div class="card service-card">
-
-            <div class="icon">🔢</div>
-
-            <h3>Barcode</h3>
-
-            <p>
-                প্রয়োজন অনুযায়ী
-                Barcode যুক্ত করা যায়।
-            </p>
-
-        </div>
-
-
-        <div class="card service-card">
-
-            <div class="icon">🖼️</div>
-
-            <h3>ছবি ও তথ্য</h3>
-
-            <p>
-                নাম, ছবি, পদবি, ID Number
-                সহ প্রয়োজনীয় তথ্য যুক্ত করা যায়।
+                Quality • Design • Printing
             </p>
 
         </div>
@@ -199,211 +344,168 @@
 </section>
 
 
-<!-- ================= FEATURES ================= -->
+<!-- ================= PROCESS ================= -->
 
-<section class="features-section" id="features">
+<section class="process section" id="process">
 
-    <div class="section-title">
+    <div class="container">
 
-        <span>কেন আমাদের সেবা নেবেন?</span>
+        <div class="section-heading">
 
-        <h2>আমাদের বিশেষ সুবিধা</h2>
+            <span>HOW IT WORKS</span>
 
-    </div>
+            <h2>অর্ডার করার পদ্ধতি</h2>
 
-
-    <div class="feature-grid">
-
-        <div class="feature">
-            <strong>💎</strong>
-            <h3>উন্নত মান</h3>
             <p>
-                উন্নতমানের প্রিন্টিং ও
-                PVC কার্ড ব্যবহার।
+                মাত্র কয়েকটি ধাপেই আপনার ID Card-এর অর্ডার সম্পন্ন করুন।
             </p>
+
         </div>
 
 
-        <div class="feature">
-            <strong>💰</strong>
-            <h3>সাশ্রয়ী মূল্য</h3>
-            <p>
-                কম খরচে মানসম্মত
-                ID Card Printing।
-            </p>
+        <div class="process-grid">
+
+            <div class="process-card">
+
+                <div class="step">01</div>
+
+                <h3>যোগাযোগ করুন</h3>
+
+                <p>
+                    WhatsApp অথবা ফোনে আমাদের সাথে যোগাযোগ করুন।
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="step">02</div>
+
+                <h3>তথ্য দিন</h3>
+
+                <p>
+                    নাম, ছবি, প্রতিষ্ঠানের তথ্য ও প্রয়োজনীয় ডাটা দিন।
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="step">03</div>
+
+                <h3>ডিজাইন তৈরি</h3>
+
+                <p>
+                    আপনার তথ্য অনুযায়ী ID Card ডিজাইন তৈরি করা হবে।
+                </p>
+
+            </div>
+
+
+            <div class="process-card">
+
+                <div class="step">04</div>
+
+                <h3>প্রিন্ট ও ডেলিভারি</h3>
+
+                <p>
+                    চূড়ান্ত অনুমোদনের পর প্রিন্ট করে ডেলিভারি দেওয়া হবে।
+                </p>
+
+            </div>
+
         </div>
 
-
-        <div class="feature">
-            <strong>⚡</strong>
-            <h3>দ্রুত ডেলিভারি</h3>
-            <p>
-                অর্ডার অনুযায়ী দ্রুত
-                কাজ সম্পন্ন করার সুবিধা।
-            </p>
-        </div>
-
-
-        <div class="feature">
-            <strong>🎨</strong>
-            <h3>আকর্ষণীয় ডিজাইন</h3>
-            <p>
-                আপনার প্রতিষ্ঠানের
-                প্রয়োজন অনুযায়ী ডিজাইন।
-            </p>
-        </div>
-
     </div>
-
-</section>
-
-
-<!-- ================= INSTITUTIONS ================= -->
-
-<section class="section" id="about">
-
-    <div class="section-title">
-
-        <span>প্রতিষ্ঠানের জন্য</span>
-
-        <h2>কারা অর্ডার করতে পারবেন?</h2>
-
-    </div>
-
-
-    <div class="institution-grid">
-
-        <div>🏫 স্কুল</div>
-
-        <div>🕌 মাদ্রাসা</div>
-
-        <div>🎓 কলেজ</div>
-
-        <div>📚 কোচিং সেন্টার</div>
-
-        <div>🏢 অফিস</div>
-
-        <div>🤝 সংগঠন</div>
-
-    </div>
-
-
-    <div class="about-box">
-
-        <h3>
-            আপনার প্রতিষ্ঠানের ID Card
-            হোক আরও আকর্ষণীয় ও প্রফেশনাল।
-        </h3>
-
-        <p>
-            নাম, ছবি, QR Code, Barcode,
-            প্রতিষ্ঠানের লোগো এবং প্রয়োজনীয়
-            তথ্য যুক্ত করে আপনার পছন্দ অনুযায়ী
-            ID Card তৈরি করা যাবে।
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ================= ORDER ================= -->
-
-<section class="order-section">
-
-    <div>
-
-        <span>📦 অর্ডার করতে</span>
-
-        <h2>
-            আজই আপনার ID Card-এর
-            অর্ডার দিন
-        </h2>
-
-        <p>
-            বিস্তারিত জানতে অথবা অর্ডার করতে
-            আমাদের সাথে যোগাযোগ করুন।
-        </p>
-
-    </div>
-
-
-    <a href="https://wa.me/8801984721775"
-       target="_blank"
-       class="order-btn">
-
-        💬 WhatsApp এ যোগাযোগ করুন
-
-    </a>
 
 </section>
 
 
 <!-- ================= CONTACT ================= -->
 
-<section class="section contact-section" id="contact">
+<section class="contact section" id="contact">
 
-    <div class="section-title">
+    <div class="container">
 
-        <span>যোগাযোগ</span>
+        <div class="section-heading">
 
-        <h2>চিত্রকর ডিজিটাল সাইন</h2>
+            <span>CONTACT US</span>
 
-        <p>
-            ডিজিটাল প্রিন্টিং এন্ড ক্রেস্ট হাউজ
-        </p>
-
-    </div>
-
-
-    <div class="contact-grid">
-
-        <div class="contact-card">
-
-            <div>📍</div>
-
-            <h3>ঠিকানা</h3>
+            <h2>যোগাযোগ করুন</h2>
 
             <p>
-                বি/৫, আনসার প্লাজা,<br>
-                আলিফ উদ্দিন রোড,<br>
-                আলমডাঙ্গা, চুয়াডাঙ্গা।
+                আপনার প্রয়োজনীয় সেবা সম্পর্কে জানতে আমাদের সাথে যোগাযোগ করুন।
             </p>
 
         </div>
 
 
-        <div class="contact-card">
+        <div class="contact-grid">
 
-            <div>📧</div>
+            <div class="contact-card">
 
-            <h3>E-mail</h3>
+                <div class="contact-icon">📍</div>
 
-            <a href="mailto:excellentmedia.00@gmail.com">
-                excellentmedia.00@gmail.com
-            </a>
+                <h3>ঠিকানা</h3>
+
+                <p>
+                    বি/৫, আনসার প্লাজা,<br>
+                    আলিফ উদ্দিন রোড,<br>
+                    আলমডাঙ্গা, চুয়াডাঙ্গা।
+                </p>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">📞</div>
+
+                <h3>Call / WhatsApp</h3>
+
+                <a href="tel:+8801984721775">
+                    01984721775
+                </a>
+
+                <br><br>
+
+                <a href="https://wa.me/8801984721775"
+                    target="_blank"
+                    class="small-whatsapp">
+                    WhatsApp এ মেসেজ করুন
+                </a>
+
+            </div>
+
+
+            <div class="contact-card">
+
+                <div class="contact-icon">✉️</div>
+
+                <h3>Email</h3>
+
+                <a href="mailto:excellentmedia.00@gmail.com">
+                    excellentmedia.00@gmail.com
+                </a>
+
+            </div>
 
         </div>
 
 
-        <div class="contact-card">
-
-            <div>📱</div>
-
-            <h3>Call / WhatsApp</h3>
-
-            <a href="tel:+8801984721775">
-                01984721775
-            </a>
-
-            <br>
+        <div class="contact-buttons">
 
             <a href="https://wa.me/8801984721775"
-               target="_blank"
-               class="wa-link">
+                target="_blank"
+                class="btn btn-whatsapp">
+                💬 WhatsApp করুন
+            </a>
 
-                WhatsApp এ মেসেজ করুন
-
+            <a href="tel:+8801984721775"
+                class="btn btn-primary">
+                📞 এখনই কল করুন
             </a>
 
         </div>
@@ -412,23 +514,43 @@
 
 </section>
 
+</main>
+
 
 <!-- ================= FOOTER ================= -->
 
-<footer>
+<footer class="footer">
 
-    <div class="footer-logo">
-        চিত্রকর ডিজিটাল সাইন
+    <div class="container footer-content">
+
+        <div>
+
+            <h3>চিত্রকর ডিজিটাল সাইন</h3>
+
+            <p>
+                Digital Printing & Crest House
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">হোম</a>
+            <a href="#services">সেবাসমূহ</a>
+            <a href="#contact">যোগাযোগ</a>
+
+        </div>
+
     </div>
 
-    <p>
-        ডিজিটাল প্রিন্টিং এন্ড ক্রেস্ট হাউজ
-    </p>
 
-    <p>
+    <div class="copyright">
+
         © <span id="year"></span>
-        Chitrokor Digital Sign. All Rights Reserved.
-    </p>
+        চিত্রকর ডিজিটাল সাইন — All Rights Reserved.
+
+    </div>
 
 </footer>
 
@@ -436,4 +558,17 @@
 <!-- ================= FLOATING WHATSAPP ================= -->
 
 <a href="https://wa.me/8801984721775"
-   class="floating-whatsapp"
+    class="floating-whatsapp"
+    target="_blank"
+    aria-label="WhatsApp">
+
+    💬
+
+</a>
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
